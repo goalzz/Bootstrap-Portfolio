@@ -38,7 +38,7 @@ body {
   
   /* Hero Banner Styles */
   .jumbotron {
-    background: url('/images/02-hero-bg.jpg') center/cover;
+    background: url('../images/02-hero-bg.jpg') center/cover;
     color: white;
     text-align: right;
     padding: 100px 0;
