@@ -9,7 +9,8 @@ body {
   
   /* Navigation bar Styles */
   nav h1 {
-    font-size: 30px;
+    font-size: 33px;
+    font-weight: 600;
   }
   
   nav ul {
@@ -53,12 +54,14 @@ body {
   }
 
   h2.display-4 {
-    font-size: 38px;
-    font-weight: 800;
-    background-color: lightblue;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #333;
   }
   .jumbo-para {
-    background-color: yellowgreen;
+    background-color: grey;
+    font-weight: 600;
+    color: black;
   }
   
   /* Subheading Styles */
@@ -71,8 +74,6 @@ body {
   .accordion-button {
     font-size: 20px; 
     padding: 15px 20px;
-    background-color: grey;
-    color: black;
   }
   .accordion-body {
     font-size: 18px; 
