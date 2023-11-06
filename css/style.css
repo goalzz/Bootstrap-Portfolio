@@ -6,11 +6,12 @@ body {
   .container {
     margin-top: 20px;
   }
+
   .nav-link:hover,
   .card-overlay-content a:hover,
   .list-group-item a:hover,
   .back-to-top-link:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /*creating box shadow on hover for all buttons*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /*creating box shadow on hover for some buttons*/
   }
   
   /* Navigation bar Styles */
@@ -71,7 +72,7 @@ body {
   }
   
   /* Subheading Styles */
-  .subheading h3 {
+  .subheading h3 { 
     font-size: 24px;
     font-weight: 550;
     text-decoration: underline;
@@ -89,8 +90,8 @@ body {
   /* Work Section Styles */
 
   #workGrid {
-    margin-left: 25%; /* This will push the container to the right */
-    margin-right: auto; 
+    margin-left: 20px; /* This will push the container to the right */
+    margin-right: 20px; 
   }
   .custom-card {
     position: relative;
@@ -131,10 +132,10 @@ body {
   
   /* Contact Section Styles */
   .contact-list-item {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
   }
-  /* Adding the hover effect to the list items */
+  /* Adding the hover effect to the list items (the rest left) */
   .contact-list-item:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
   }

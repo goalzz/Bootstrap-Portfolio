@@ -14,20 +14,23 @@
     <!--Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand"><h1>My Portfolio Website</h1></a>
+          <a class="navbar-brand"><h1>Portfolio Website</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-list"> <!-- added 'navbar-list' to make custom changes in the css-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutGrid">Work</a>
+                    <a class="nav-link" href="#workGrid">Work</a>
                   </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutGrid">Skills</a>
+                <a class="nav-link" href="#skillsGrid">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#workGrid">About me / Contact</a>
+                <a class="nav-link" href="#aboutGrid">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactGrid">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://drive.google.com/file/d/1yiIgLWSN7r70c0JubNF9yODG2-FCs8nV/view?usp=drive_link" target="_blank">Resume</a>
@@ -57,10 +60,22 @@
     
       <!--Work section-->
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-4">
+              <div class="card-header" style="background-color: #333; color: white;">Work
+              </div>
+              <div class="card-body">
+                <p class="card-text">As a skilled Front-End Web Developer, I have crafted a collection of engaging projects that exemplify my dedication to creating stunning and user-friendly web experiences. From personal portfolio websites to captivating web applications, each project reflects my commitment to excellence in HTML5, CSS3, JavaScript, jQuery, responsive design, Bootstrap, and version control with Git.
+                </p>
+              </div>
+            </div>
+          </div>
+      
       <section id="workGrid">
         <div class="container">
-          <div class="row">
-            <!-- Card 1 (Takes space of two) -->
+          <div class="row justify-content-center ms-auto"> <!-- Center the cards on the screen using ms-auto-->
+            <!-- Card 1 -->
             <div class="col-md-6">
               <div class="card mb-4 first-card custom-card">
                 <a href="https://goalzz.github.io/edonasPortfolio/" target="_blank">
@@ -68,7 +83,7 @@
                   <div class="card-overlay">
                     <div class="card-overlay-content">
                       <h5 class="card-title">Portfolio Website</h5>
-                      <p class="card-description">Your description for Project 1 here.</p>
+                      <p class="card-description">Personal Portfolio Website using HTML5 & CSS3</p>
                     </div>
                   </div>
                 </a>
@@ -82,63 +97,49 @@
                   <div class="card-overlay">
                     <div class="card-overlay-content">
                       <h5 class="card-title">Project 2</h5>
-                      <p class="card-description">Your description for Project 2 here.</p>
+                      <p class="card-description">Description will appear here when the second project is ready.</p>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="col-md-6">
-            <div class="card mb-4 custom-card">
-              <a href="https://example.com/project2" target="_blank">
-                <img src="./images/02-portfolio-2.jpg" class="card-img-top" alt="Project 2">
-                <div class="card-overlay">
-                  <div class="card-overlay-content">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-description">Your description for Project 2 here.</p>
+          <div class="row justify-content-center ms-auto"> <!-- Centered the cards on the screen using ms-auto-->
+            <!-- Card 3 -->
+            <div class="col-md-6">
+              <div class="card mb-4 custom-card">
+                <a href="https://example.com/project3" target="_blank">
+                  <img src="./images/02-portfolio-3.jpg" class="card-img-top" alt="Project 3">
+                  <div class="card-overlay">
+                    <div class="card-overlay-content">
+                      <h5 class="card-title">Project 3</h5>
+                      <p class="card-description">Description will appear here when the third project is ready.</p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6">
+              <div class="card mb-6 custom-card">
+                <a href="https://example.com/project4" target="_blank">
+                  <img src="./images/02-portfolio-4.jpg" class="card-img-top" alt="Project 4">
+                  <div class="card-overlay">
+                    <div class="card-overlay-content">
+                      <h5 class="card-title">Project 4</h5>
+                      <p class="card-description">Description will appear here when the fourth project is ready.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-md-6">
-            <div class="card mb-4 custom-card">
-              <a href="https://example.com/project2" target="_blank">
-                <img src="./images/02-portfolio-2.jpg" class="card-img-top" alt="Project 2">
-                <div class="card-overlay">
-                  <div class="card-overlay-content">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-description">Your description for Project 2 here.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-         <!-- Card 5 -->
-         <div class="col-md-6">
-            <div class="card mb-4 custom-card">
-              <a href="https://example.com/project2" target="_blank">
-                <img src="./images/02-portfolio-2.jpg" class="card-img-top" alt="Project 2">
-                <div class="card-overlay">
-                  <div class="card-overlay-content">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-description">Your description for Project 2 here.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
         </div>
       </section>
       
-
+      
     <!--Skills section-->
+    <section id="skillsGrid">
     <div class="card mb-4">
         <div class="card-header" style="background-color: grey; color: black;">
           Skills
@@ -169,7 +170,8 @@
           </ul>
         </div>
       </div>
-
+    </section>
+<!--About me and Contact ROW-->
     <section id="aboutGrid" class="container">
         <div class="row">
           <div class="col-md-6">
@@ -184,7 +186,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <!--Contact section-->
+          <div class="col-md-6" id="contactGrid"> <!--added id contactGrid to link to navbar-->
             <div class="card mb-4">
               <div class="card-header" style="background-color: grey; color: black;">
                 Contact Me
@@ -204,6 +207,7 @@
               </div>
             </div>
           </div>
+        </section>
         </div>
       </section>
   </main>
@@ -211,7 +215,7 @@
   <footer class="bg-dark text-white">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2023 Created by Edona Ahmetaj - <a href="#" class="back-to-top-link">Back to Top</a></p>
+        <p>&copy; 2023 All rights reserved | Created by Edona Ahmetaj - <a href="#" class="back-to-top-link">Back to Top</a></p>
       </div>
     </div>
   </footer>
