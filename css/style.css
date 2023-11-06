@@ -6,6 +6,12 @@ body {
   .container {
     margin-top: 20px;
   }
+  .nav-link:hover,
+  .card-overlay-content a:hover,
+  .list-group-item a:hover,
+  .back-to-top-link:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /*creating box shadow on hover for all buttons*/
+  }
   
   /* Navigation bar Styles */
   nav h1 {
@@ -86,44 +92,52 @@ body {
     margin-left: 25%; /* This will push the container to the right */
     margin-right: auto; 
   }
-
-  #workGrid .card {
-    margin: 10px 0;
+  .custom-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; 
   }
   
-  .card-img-top {
-    max-height: 200px;
+  .custom-card .card-img-top {
+    object-fit: cover;
+    height: 100%;
   }
   
-  .card-title {
-    font-size: 18px;
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .first-card {
-    transform: scale(1.1); 
+  
+  .card-overlay:hover {
+    opacity: 1.5;
   }
+  
+  .card-overlay-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
   
   /* Contact Section Styles */
-  #contactGrid ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
+  .contact-list-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
   }
-  
-  .contactGridArea {
-    text-align: center;
-    font-size: 20px;
+  /* Adding the hover effect to the list items */
+  .contact-list-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); 
   }
-  
-  .contactGridArea a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .contactGridArea a:hover {
-    text-decoration: underline;
-  }
-  
   /* Footer Styles */
   footer {
     background-color: #333;
