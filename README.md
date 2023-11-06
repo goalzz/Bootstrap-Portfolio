@@ -50,6 +50,7 @@ To view and/or use the project, simply open the index.html file in your web brow
 
 ### Deployment
 
-Here you can see a screenshot of the website:
+Here you can see a screenshot of the website: ![bootstrap-portfolio sc](https://github.com/goalzz/Bootstrap-Portfolio/assets/124784722/2c7c2f4a-d0e1-4403-8f30-8203608b68bf)
 
-Click on this link to go to the deployed page: 
+
+Click on this link to go to the deployed page: https://goalzz.github.io/Bootstrap-Portfolio/ 
