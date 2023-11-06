@@ -1,84 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edona Ahmetaj - Portfolio Website (Work in progress)</title>
-
-    <!--Bootstrap link for CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!--link to my own CSS-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edona Ahmetaj - Bootstrap Based Portfolio Website </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand"><h1>Edona's Portfolio Website</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-list"> <!-- added 'navbar-list' to make custom changes in the css-->
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutGrid">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#workGrid">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactGrid">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1yiIgLWSN7r70c0JubNF9yODG2-FCs8nV/view?usp=drive_link" target="_blank">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Hero section (jumbotron)-->
+  <section class="jumbotron jumbotron-fluid text-center bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> <!--for the picture to be in the centre-->
+          <div class="profile-photo">
+            <img src="/images/profile-photo.JPG" alt="Profile Image of Edona" class="profile-image">
+          </div>
+        </div>
+        <div class="col-md-12"> <!--for the writings to be in the centre-->
+          <h2 class="display-4">Welcome to My Portfolio</h2>
+          <p class="jumbo-para">Discover my work and journey as a front-end web developer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!--Navigation bar section-->
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg custom-navbar"> <!--added this custom-navbar to customise the background color of it-->
-            <div class="container-fluid">
-              <a class="navbar-brand mr-4">Edona Ahmetaj's Portfolio</a> <!--how to create space between this and nav-links ???-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+  <main class="container">
+    <section id="aboutGrid">
+        <div class="accordion" id="aboutSkillsAccordion">
+          <!-- First Accordion Item: About Me -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="aboutHeading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutCollapse" aria-expanded="true" aria-controls="aboutCollapse" style="background-color: #333; color: white;">
+                About Me
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                  </li>
+            </h2>
+            <div id="aboutCollapse" class="accordion-collapse collapse show" aria-labelledby="aboutHeading" data-bs-parent="#aboutSkillsAccordion">
+              <div class="accordion-body">
+                <p>I'm Edona, a London-based enthusiast with a strong background in mathematics. Coding is my passion, and I'm currently honing my skills through a front-end web development bootcamp. I thrive on the logic and creativity that coding offers, and I'm excited to create stunning and user-friendly web experiences. Let's embark on this digital journey together!</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Second Accordion Item: Skills -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skillsHeading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skillsCollapse" aria-expanded="false" aria-controls="skillsCollapse" style="background-color: grey; color: black;">
+                Skills
+              </button>
+            </h2>
+            <div id="skillsCollapse" class="accordion-collapse collapse" aria-labelledby="skillsHeading" data-bs-parent="#aboutSkillsAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>HTML5 and CSS3</li>
+                  <li>JavaScript and jQuery</li>
+                  <li>Responsive Web Design</li>
+                  <li>Bootstrap Framework</li>
+                  <li>Version Control (Git)</li>
+                  <li>Web Performance Optimization</li>
+                  <li>UX (User Experience) Design</li>
                 </ul>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </section>
+      
+
+    <div class="subheading">
+      <h3>Work</h3>
+    </div>
+    <section id="workGrid">
+        <div class="container">
+          <div class="row">
+            <!-- Card 1 (Takes space of two) -->
+            <div class="col-md-10">
+              <div class="card mb-4 first-card">
+                <a href="https://example.com/project1" target="_blank">
+                  <img src="/images/02-portfolio-1.jpg" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Card 2 (Under Card 1) -->
+            <div class="col-md-5">
+              <div class="card mb-4">
+                <a href="https://example.com/project2" target="_blank">
+                  <img src="/images/02-portfolio-2.jpg" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Card 3 (Under Card 1) -->
+            <div class="col-md-5">
+              <div class="card mb-4">
+                <a href="https://example.com/project3" target="_blank">
+                  <img src="/images/02-portfolio-3.jpg" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Card 4 (Under Card 2 and Card 3) -->
+            <div class="col-md-5">
+              <div class="card mb-4">
+                <a href="https://example.com/project4" target="_blank">
+                  <img src="/images/02-portfolio-4.jpg" class="card-img-top" alt="Project 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 4</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Card 5 (Under Card 2 and Card 3) -->
+            <div class="col-md-5">
+              <div class="card mb-4">
+                <a href="https://example.com/project5" target="_blank">
+                  <img src="/images/02-run-buddy.jpg" class="card-img-top" alt="Project 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Project 5</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!---->
+    <div class="subheading">
+      <h3>Contact Me</h3>
+    </div>
+    <section id="contactGrid">
+      <ul class="list-inline">
+        <li id="email" class="contactGridArea list-inline-item">
+          <p><a href="mailto:edonamasur@gmail.com">Email</a></p>
+        </li>
+        <li id="github" class="contactGridArea list-inline-item">
+          <p><a href="https://github.com/goalzz" target="_blank">GitHub</a></p>
+        </li>
+        <li id="linkedin" class="contactGridArea list-inline-item">
+          <p><a href="https://www.linkedin.com/in/edona-ahmetaj-210484280" target="_blank">LinkedIn</a></p>
+        </li>
+      </ul>
     </section>
-
-    <!--Hero section-->
-
-    <section id="hero">
+  </main>
+  <footer class="bg-dark text-white">
     <div class="container">
-    <div class="row">
-    <div class="col-md-6">
-    <p>Welcome to my Portfolio!</p>
+      <div class="footer-content">
+        <p>&copy; 2023 Created by Edona Ahmetaj</p>
+      </div>
     </div>
-    </div>
-    </div>
+  </footer>
 
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
