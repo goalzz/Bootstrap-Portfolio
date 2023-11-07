@@ -7,10 +7,9 @@ This is a Bootstrap-based portfolio website created by myself. It serves as an o
 1. Project Overview
 2. Getting Started
 3. Features
-4. Technologies Used
+4. Technologies Used / Resources
 5. How to Use
-6. ontributing
-7. License
+6. Deployment
 
 ## Project Overview
 
